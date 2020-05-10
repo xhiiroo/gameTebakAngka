@@ -6,7 +6,7 @@ var tooHigh = 'Terlalu Tinggi! Ayo kesempatanmu tinggal ';
 var tooLow = 'Terlalu Rendah! Ayo kesempatanmu tinggal ';
 var win = 'Benar! :D Angka yang dicari adalah ';
 var lose = 'Maaf anda gagal :( \nNilai yang dicari adalah ';
-var finish = 'Thanks for playing :)';
+var finish = 'Thanks for playing :) \nRefresh halaman ini untuk kembali bermain';
 
 // Menangkap pilihan program/CPU
 cpu = Math.floor(Math.random() * 11); // <-- Library JS untuk membangkitkan bilangan random
@@ -59,70 +59,3 @@ while (chance > 0) {
 
 // Game berakhir (jika chance = 0, looping selesai)
 alert(finish);
-
-// Cara Lama
-{
-    // // Jika player menang dalam sekali putaran
-    // if (p == cpu) {
-    //     hasil = alert(win + p);
-    //     alert(finish);
-    // }
-
-    // // Apabila Angka yang diinput di kesempatan ke 2 lebih TINGGI dari CPU
-    // else if (p > cpu) {
-    //     hasil = alert(tooHigh2);
-    //     p = prompt(start);
-    //     if (p == cpu) { // <-- Apabila tebakan player benar
-    //         hasil = alert(win + p);
-    //         alert(finish);
-    //     } else if (p > cpu) { // <-- Apabila Angka diinput di kesempatan terakhir lebih TINGGI dari CPU
-    //         hasil = alert(tooHigh1);
-    //         p = prompt(start);
-    //         if (p == cpu) { // <-- Apabila tebakan player benar
-    //             hasil = alert(win + p);
-    //             alert(finish);
-    //         } else {
-    //             hasil = alert(lose + cpu); // <-- Player telah kalah
-    //         }
-    //     } else if (p < cpu) { // <-- Apabila Angka diinput di kesempatan terakhir lebih RENDAH dari CPU
-    //         hasil = alert(tooLow1);
-    //         p = prompt(start);
-    //         if (p == cpu) { // <-- Apabila tebakan player benar
-    //             hasil = alert(win + p);
-    //             alert(finish);
-    //         } else {
-    //             hasil = alert(lose + cpu); // <-- Player telah kalah
-    //         }
-    //     }
-    // }
-
-    // // Apabila Angka yang diinput di kesempatan ke 2 lebih RENDAH dari CPU
-    // else if (p < cpu) {
-    //     hasil = alert(tooLow2);
-    //     p = prompt(start);
-    //     if (p == cpu) { // <-- Apabila tebakan player benar
-    //         hasil = alert(win + p);
-    //         alert(finish);
-    //     } else if (p < cpu) { // <-- Apabila Angka diinput di kesempatan terakhir lebih RENDAH dari CPU
-    //         hasil = alert(tooLow1);
-    //         p = prompt(start);
-    //         if (p == cpu) { // <-- Apabila tebakan player benar
-    //             hasil = alert(win + p);
-    //             alert(finish);
-    //         } else {
-    //             hasil = alert(lose + cpu); // <-- Player telah kalah
-    //         }
-    //     } else if (p > cpu) { // <-- Apabila Angka diinput di kesempatan terakhir lebih TINGGI dari CPU
-    //         hasil = alert(tooHigh1);
-    //         p = prompt(start);
-    //         if (p == cpu) { // <-- Apabila tebakan player benar
-    //             hasil = alert(win + p);
-    //             alert(finish);
-    //         } else {
-    //             hasil = alert(lose + cpu); // <-- Player telah kalah
-    //         }
-    //     }
-    // } else {
-    //     alert(error); // <-- Game berhenti jika user menginput nilai diluar angka 1-10
-    // }
-}
